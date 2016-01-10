@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">JhongQAdmin</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_closeSystem">ปิดระบบ</string>
+    <string name="title_activity_qpage">QPage</string>
+    <string name="title_activity_add_q">AddQ</string>
+    <string name="title_activity_fragment__qpage">Fragment_QPage</string>
+    <string name="action_powerOf">ปิดระบบ</string>
+    <string name="title_activity_show_q_tab">Eat Am Are</string>
+
+
+    <string name="title_section1">คิวA</string>
+    <string name="title_section2">คิวB</string>
+    <string name="title_section3">คิวC</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

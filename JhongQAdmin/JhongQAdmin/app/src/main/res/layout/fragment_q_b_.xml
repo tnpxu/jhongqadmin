@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.ize.jhongqadmin.Q_B_Fragment"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout"
+        android:weightSum="1"
+        >
+
+        <TextView android:text="Eat Am Are" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#ff12237b"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:id="@+id/Fragment_QB_restName"
+            android:layout_weight="0.04"
+            android:singleLine="false"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="สาขา Center One"
+            android:id="@+id/Fragment_QB_branchName"
+            android:layout_gravity="center"
+            android:gravity="center_vertical|center_horizontal"
+            android:textStyle="bold"
+            android:layout_weight="0.05" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="84dp"
+            android:layout_alignEnd="@+id/linearLayout"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="NONE"
+                    android:id="@+id/Fragment_QB_txt_CurQ"
+                    android:textSize="45dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/txtRed"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="NONE"
+                    android:id="@+id/Fragment_QB_txt_CusName"
+                    android:textColor="@color/txtRed"
+                    android:textSize="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Fragment_QA_btn_accept"
+                    android:src="@drawable/btn_accept"
+                    android:layout_weight="1"
+                    android:onClick="BtnAcceptQB"
+                    style="@style/Widget.AppCompat.ActionButton"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/btn_skip"
+                    android:id="@+id/Fragment_QA_btn_skip"
+                    android:layout_weight="1"
+                    android:onClick="BtnSkipQB"
+                    style="@style/Widget.AppCompat.ActionButton"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|clip_vertical"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="จำนวนผู้รอคิวทั้งหมด"
+                android:id="@+id/Fragment_QB_txt_sumQ"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="#fc010101" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="7"
+                android:id="@+id/Fragment_QB_txt_numSumQ"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#ffaf2d14"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="229dp"
+            android:id="@+id/Fragment_QB_listView"
+            android:layout_weight="0.86"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+
+    //Fab AddQ
+    <com.software.shell.fab.ActionButton
+        android:id="@+id/fabBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        fab:type="DEFAULT"
+        fab:button_color="@color/BlueTitle"
+        fab:button_colorPressed="@color/BlueTitle"
+        fab:image="@drawable/fab_plus_icon"
+        fab:image_size="30dp"
+        fab:shadow_color="#757575"
+        fab:shadow_radius="2.0dp"
+        fab:shadow_xOffset="1.5dp"
+        fab:shadow_yOffset="2.0dp"
+        fab:stroke_color="@color/fab_material_blue_grey_500"
+        fab:stroke_width="1.0dp"
+        fab:button_colorRipple="#FD6AC9E2"
+        fab:rippleEffect_enabled="true"
+        fab:shadowResponsiveEffect_enabled="true"
+        fab:show_animation="@anim/fab_roll_from_down"
+        fab:hide_animation="@anim/fab_roll_to_down"
+        />
+
+</RelativeLayout>

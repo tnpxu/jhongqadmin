@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:id="@+id/main_image_logo"
+            android:src="@drawable/header_eatamare"
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_btn_startQ"
+            android:src="@drawable/btn_startq"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:clickable="true"
+            style="@style/Widget.AppCompat.ActionButton"
+            android:onClick="systemStart" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="20dp">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/av_eatamare"
+            android:layout_gravity="center|left|top"
+            android:id="@+id/main_image_ava"
+            android:scaleType="centerCrop"
+            app:sriv_left_top_corner_radius="16dip"
+            app:sriv_right_top_corner_radius="0dip"
+            app:sriv_left_bottom_corner_radius="48dip"
+            app:sriv_right_bottom_corner_radius="16dip"
+            app:sriv_oval="true"/>
+
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bar B Q Plaza"
+                android:id="@+id/main_txt_RestName"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="สาขา Siam Center"
+                android:id="@+id/main_txt_Branch"
+                android:textColor="@color/txtBlack" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

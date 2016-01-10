@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ize.jhongqadmin.ShowQ_tab">
+
+    <item
+        android:id="@+id/ac_refresh"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_refresh"
+        android:title="รีเฟรช"
+        />
+
+    <item
+        android:id="@+id/action_power"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_power_w"
+        android:title="ปิดระบบ"
+        />
+
+</menu>
